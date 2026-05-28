@@ -13,6 +13,58 @@
             margin-bottom: 1em;
             line-height: 1.7;
         }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+            color: #ccc;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.55rem 0.8rem;
+            border-radius: 7px;
+            border: 1px solid #444;
+            background: #181818;
+            color: #f5f5f5;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: #0095f9;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        #btn-enviar {
+            margin-top: 1rem;
+            background: #0095f9;
+            color: #fff;
+            font-weight: bold;
+            padding: 0.6rem 1.6rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        #btn-enviar:hover { background: #007acc; }
+        #btn-enviar:disabled { background: #555; cursor: not-allowed; }
+        #status-msg {
+            margin-top: 1rem;
+            text-align: center;
+            font-weight: 600;
+            min-height: 1.5rem;
+        }
+        .status-ok  { color: #4cff91; }
+        .status-err { color: #ff5c5c; }
     </style>
 </head>
 <body>
@@ -27,14 +79,31 @@
     <main>
         <section class="scroll-reveal">
             <h1>Fale comigo</h1>
-           
-            <form action="mailto:luizfrianellifv@gmail.com" method="post" style="max-width:350px;margin:0 auto;background:#222;padding:1.5rem 1rem;border-radius:14px;box-shadow:0 2px 12px #0003;">
-                <label>Nome:<input type="text" name="n1" required style="width:100%;margin-bottom:0.7rem;"></label><br>
-                <label>E-mail:<input type="email" name="em" required style="width:100%;margin-bottom:0.7rem;"></label><br>
-                <label>Interesse:<input type="text" name="it" style="width:100%;margin-bottom:0.7rem;"></label><br>
-                <label><input type="checkbox" name="c1" value="S" required> Concordo com os termos do site.</label><br>
-                <input type="submit" value="Enviar" style="margin-top:1rem;background:#0095f9;color:#ffffff;font-weight:bold;padding:0.5rem 1.2rem;border:none;border-radius:6px;cursor:pointer;">
+
+            <form id="contact-form" style="max-width:380px;margin:0 auto;background:#222;padding:1.8rem 1.4rem;border-radius:14px;box-shadow:0 2px 12px #0003;" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="f-nome">Nome</label>
+                    <input type="text" id="f-nome" name="n1" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="f-email">E-mail</label>
+                    <input type="email" id="f-email" name="em" placeholder="seu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="f-interesse">Interesse</label>
+                    <input type="text" id="f-interesse" name="it" placeholder="Ex: Proposta de trabalho">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="f-termos" name="c1" required>
+                    <label for="f-termos" style="margin:0;font-weight:400;">Concordo com os termos do site.</label>
+                </div>
+                <button type="button" id="btn-enviar" onclick="enviarFormulario()">Enviar</button>
+                <p id="status-msg"></p>
             </form>
+
+            <p style="text-align:center;margin-top:1.5rem;color:#aaa;">Ou entre em contato diretamente:<br>
+                <a href="mailto:luizfrianellifv@gmail.com" style="color:#0095f9;">luizfrianellifv@gmail.com</a>
+            </p>
         </section>
     </main>
     <footer>
