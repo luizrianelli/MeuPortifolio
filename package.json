@@ -1,0 +1,6 @@
+{
+  "name": "luiz-rianelli-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {"dev": "node preview.mjs", "check": "node --check app.js && node --check language.js && node --check curriculo-admin.js && node --check preview.mjs"}
+}

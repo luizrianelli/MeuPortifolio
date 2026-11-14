@@ -1,0 +1,13 @@
+# GitHub Pages: publish the portfolio, keeping local maintenance tools out of the site.
+exclude:
+  - README.md
+  - PUBLICACAO.md
+  - package.json
+  - preview.mjs
+  - atualizar-curriculo.html
+  - curriculo-admin.js
+  - original
+  - node_modules
+  - sobre.html
+  - contato.html
+  - novidades.html

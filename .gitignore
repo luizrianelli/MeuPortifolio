@@ -1,0 +1,6 @@
+original/
+preview-*.png
+preview-*.jpg
+node_modules/
+dist/
+tmp/
