@@ -44,6 +44,7 @@ const english = {
   'E-mail copiado.':'Email copied.','Copie o endereço acima ou clique nele para abrir seu e-mail.':'Copy the address above or click it to open your email app.'
 };
 const englishAttributes = {
+  'Interface da ToDo List com tarefas, listas e calendário':'ToDo List interface with tasks, lists and a calendar',
   'Ver repositório da ToDo List':'View the ToDo List repository',
   'Luiz Rianelli, início':'Luiz Rianelli, home','Navegação principal':'Main navigation','Ativar tema claro':'Switch to light theme','Ativar tema escuro':'Switch to dark theme','Abrir menu':'Open menu','Explore as seções pelo rack':'Explore the sections through the rack','Ver apresentação do Nocturnia no LinkedIn':'View the Nocturnia presentation on LinkedIn','Ver repositório deste portfólio':'View this portfolio’s repository','Copiar e-mail':'Copy email','Cena do jogo Nocturnia':'A scene from Nocturnia'
 };

@@ -21,6 +21,7 @@ nav a span{font-family:var(--mono);font-size:11px;letter-spacing:.6px;text-trans
 @keyframes cursor-blink{0%,49%{opacity:1}50%,100%{opacity:0}}
 .contact h2>.typing-first{color:var(--text)}.contact h2>.typing-last{color:var(--accent)}.contact h2 .typing-line span{color:inherit}.contact h2 .typing-line .typing-cursor{color:var(--accent)}.contact .email-help{font-size:11px;margin:-10px 0 26px}.email-help a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
 .portrait img{height:400px;object-position:center 43%;filter:none}
+.project-image.project-screenshot{height:auto;aspect-ratio:16/10}.project-screenshot img{object-fit:contain}.nocturnia-shot{background:#28172a}.todo-shot{background:#f7f6f2}
 @media(max-width:800px){.portrait img{height:340px}}
 @media(max-width:550px){.portrait img{height:410px;object-position:center 43%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
